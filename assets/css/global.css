@@ -1,0 +1,10 @@
+:root {
+  --color-primary: #5eae53;
+  --color-secundary: #e94822;
+  --color-tertiary: #f2910a;
+  --color-fourth: #efd510;
+  --color-default: #bdbdbd;
+  --menu-transition: 0.5s;
+  --transition-icon: transform 0.2s;
+  --transform-icon: scale(1.5);
+}

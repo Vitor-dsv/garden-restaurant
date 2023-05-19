@@ -1,0 +1,107 @@
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 100px 30px;
+  gap: 20px;
+}
+
+.location__images,
+.location-detail,
+.location__images img {
+  width: 90%;
+  height: 90%;
+}
+
+.location-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  position: relative;
+}
+
+.location-detail__subtitle {
+  padding: 10px;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.location-detail__title {
+  color: black;
+  font-size: 50px;
+  font-weight: 900;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.location-detail__description {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.location-detail__button {
+  color: white;
+  background-color: var(--color-tertiary);
+  border: none;
+  padding: 20px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.location-detail__button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.location-detail__button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.location-detail__button:hover span {
+  padding-right: 25px;
+}
+
+.location-detail__button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1115px) {
+  .location {
+    flex-direction: column;
+    margin: 30px 10px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  .location__images,
+  .location-detail,
+  .location__images img {
+    width: 100%;
+    height: 100%;
+  }
+}

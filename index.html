@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/container-styles.css" />
+    <link rel="stylesheet" href="assets/css/favorite-foods.css" />
+    <link rel="stylesheet" href="assets/css/location.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+
+    <script
+      src="https://kit.fontawesome.com/a1eda6440a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="nav-bar">
+          <h1 class="nav-bar__title">Fonditas</h1>
+
+          <div class="menu-offcanvas menu-offcanvas-js">
+            <img
+              class="menu-offcanvas__close"
+              src="assets/images/fechar-simbolo-de-botao-circular.png"
+              alt="fechar simbolo de botao circular"
+              onclick="document.querySelector('.menu-offcanvas-js').classList.toggle('is-active')"
+            />
+            <ul class="menu-offcanvas__group-list">
+              <h1 class="nav-bar__title">Fonditas</h1>
+
+              <li class="menu-offcanvas__group-list__item">
+                <a href="http://">Categorias</a>
+              </li>
+              <li class="menu-offcanvas__group-list__item">
+                <a href="http://">Pratos</a>
+              </li>
+              <li class="menu-offcanvas__group-list__item">
+                <a href="http://">Localização</a>
+              </li>
+              <li class="menu-offcanvas__group-list__item">
+                <a href="http://">Saiba mais</a>
+              </li>
+              <li class="menu-offcanvas__group-list__item">
+                <a href="http://">Contatos</a>
+              </li>
+            </ul>
+          </div>
+
+          <img
+            onclick="document.querySelector('.menu-offcanvas-js').classList.toggle('is-active')"
+            class="button-menu-canvas js-offcanvas-trigger"
+            src="assets/images/menu-aberto.png"
+            alt="Barras do menu"
+          />
+
+          <ul class="nav-bar__group-list">
+            <li class="group-list__item">
+              <a href="http://">Categorias</a>
+            </li>
+            <li class="group-list__item">
+              <a href="http://">Pratos</a>
+            </li>
+            <li class="group-list__item">
+              <a href="http://">Localização</a>
+            </li>
+            <li class="group-list__item">
+              <a href="http://">Saiba mais</a>
+            </li>
+            <li class="group-list__item">
+              <a href="http://">Contatos</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <article class="content-text">
+          <h3 class="content-text__recomendation">Do seu lugar favorito</h3>
+          <h1 class="content-text__title">
+            A comida <br />com o <br />melhor preço
+          </h1>
+        </article>
+        <article class="content-images">
+          <img
+            src="assets/images/image_home.png"
+            alt="Imagem da home"
+            srcset=""
+          />
+        </article>
+      </main>
+
+      <footer>
+        <div class="icon-social">
+          <img src="assets/images/facebook.png" alt="Ícone do facebook" />
+        </div>
+        <div class="icon-social">
+          <img src="assets/images/instagram.png" alt="Ícone do instagram" />
+        </div>
+        <div class="icon-social">
+          <img src="assets/images/twitter.png" alt="Ícone do twitter" />
+        </div>
+      </footer>
+    </div>
+
+    <div class="favorite-foods">
+      <p class="favorite-foods__category">CATEGORIAS</p>
+      <p class="favorite-foods__title">Comidas favoritas</p>
+
+      <div class="favorite-foods__cards">
+        <input type="radio" name="dot" id="one" />
+        <input type="radio" name="dot" id="two" />
+        <div class="main-card">
+          <div class="cards">
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="assets/images/pizza.png" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name">Pizzas</div>
+                  <div class="job">A partir de R$60,00</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="assets/images/hamburguer.png" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name">Hambúrgueres</div>
+                  <div class="job">A partir de R$50,00</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="assets/images/frutas.png" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name">Frutas</div>
+                  <div class="job">A partir de R$20,00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="assets/images/sopa.png" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name">Sopas</div>
+                  <div class="job">A partir de R$30,00</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="assets/images/bolo.png" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name">Bolos</div>
+                  <div class="job">A partir de R$45,00</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="img">
+                  <img src="assets/images/prato-executivo.png" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name">Pratos executivos</div>
+                  <div class="job">A partir de R$30,00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <label for="one" class="active one"></label>
+          <label for="two" class="two"></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="location">
+      <div class="location__images">
+        <img
+          src="assets/images/homem-localização.png"
+          alt="Homem segurando um notebook"
+          srcset=""
+        />
+      </div>
+      <div class="location-detail">
+        <h4 class="location-detail__subtitle">MAPA</h4>
+        <h2 class="location-detail__title">Nós estamos perto de você!</h2>
+        <p class="location-detail__description">
+          Clique no botão e veja nossa localização!
+        </p>
+        <button class="location-detail__button">
+          <span>Acessar a localização</span>
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-content__up">
+          <div class="content-up__logo">
+            <h1 class="logo-title">Fonditas</h1>
+            <div class="logo-icons">
+              <div class="icon-social">
+                <img src="assets/images/facebook.png" alt="Ícone do facebook" />
+              </div>
+              <div class="icon-social">
+                <img
+                  src="assets/images/instagram.png"
+                  alt="Ícone do instagram"
+                />
+              </div>
+              <div class="icon-social">
+                <img src="assets/images/twitter.png" alt="Ícone do twitter" />
+              </div>
+            </div>
+          </div>
+
+          <div class="content-up__redirect">
+            <a class="redirect-action">Subir</a>
+            <a class="redirect-action">Comidas Favoritas</a>
+            <a class="redirect-action">Localização</a>
+          </div>
+        </div>
+
+        <div class="footer-content__separator"></div>
+
+        <div class="footer-content__down">
+          <p class="content-down__text">© 2023 Fonditas</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
