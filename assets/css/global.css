@@ -8,3 +8,12 @@
   --transition-icon: transform 0.2s;
   --transform-icon: scale(1.5);
 }
+
+a {
+  text-decoration: none;
+}
+
+*,
+html {
+  scroll-behavior: smooth;
+}

@@ -34,10 +34,11 @@
     ></script>
   </head>
   <body>
+    <a name="container"></a>
     <div class="container">
       <header>
         <nav class="nav-bar">
-          <h1 class="nav-bar__title">Fonditas</h1>
+          <h1 class="nav-bar__title">Garden</h1>
 
           <div class="menu-offcanvas menu-offcanvas-js">
             <img
@@ -47,22 +48,16 @@
               onclick="document.querySelector('.menu-offcanvas-js').classList.toggle('is-active')"
             />
             <ul class="menu-offcanvas__group-list">
-              <h1 class="nav-bar__title">Fonditas</h1>
+              <h1 class="nav-bar__title">Garden</h1>
 
               <li class="menu-offcanvas__group-list__item">
-                <a href="http://">Categorias</a>
+                <a href="#categories">Categorias</a>
               </li>
               <li class="menu-offcanvas__group-list__item">
-                <a href="http://">Pratos</a>
+                <a href="#location">Localização</a>
               </li>
               <li class="menu-offcanvas__group-list__item">
-                <a href="http://">Localização</a>
-              </li>
-              <li class="menu-offcanvas__group-list__item">
-                <a href="http://">Saiba mais</a>
-              </li>
-              <li class="menu-offcanvas__group-list__item">
-                <a href="http://">Contatos</a>
+                <a href="#footer">Contatos</a>
               </li>
             </ul>
           </div>
@@ -76,19 +71,13 @@
 
           <ul class="nav-bar__group-list">
             <li class="group-list__item">
-              <a href="http://">Categorias</a>
+              <a href="#categories">Categorias</a>
             </li>
             <li class="group-list__item">
-              <a href="http://">Pratos</a>
+              <a href="#location">Localização</a>
             </li>
             <li class="group-list__item">
-              <a href="http://">Localização</a>
-            </li>
-            <li class="group-list__item">
-              <a href="http://">Saiba mais</a>
-            </li>
-            <li class="group-list__item">
-              <a href="http://">Contatos</a>
+              <a href="#footer">Contatos</a>
             </li>
           </ul>
         </nav>
@@ -111,18 +100,19 @@
       </main>
 
       <footer>
-        <div class="icon-social">
+        <div class="icon-social" onclick="openFacebook()">
           <img src="assets/images/facebook.png" alt="Ícone do facebook" />
         </div>
-        <div class="icon-social">
+        <div class="icon-social" onclick="openInstagram()">
           <img src="assets/images/instagram.png" alt="Ícone do instagram" />
         </div>
-        <div class="icon-social">
+        <div class="icon-social" onclick="openTwitter()">
           <img src="assets/images/twitter.png" alt="Ícone do twitter" />
         </div>
       </footer>
     </div>
 
+    <a name="categories"></a>
     <div class="favorite-foods">
       <p class="favorite-foods__category">CATEGORIAS</p>
       <p class="favorite-foods__title">Comidas favoritas</p>
@@ -209,6 +199,7 @@
       </div>
     </div>
 
+    <a name="location"></a>
     <div class="location">
       <div class="location__images">
         <img
@@ -221,48 +212,51 @@
         <h4 class="location-detail__subtitle">MAPA</h4>
         <h2 class="location-detail__title">Nós estamos perto de você!</h2>
         <p class="location-detail__description">
-          Clique no botão e veja nossa localização!
+          Clique e veja nossa localização!
         </p>
-        <button class="location-detail__button">
+        <button class="location-detail__button" onclick="openMaps()">
           <span>Acessar a localização</span>
         </button>
       </div>
     </div>
 
+    <a name="footer"></a>
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-content__up">
           <div class="content-up__logo">
-            <h1 class="logo-title">Fonditas</h1>
+            <h1 class="logo-title">Garden</h1>
             <div class="logo-icons">
-              <div class="icon-social">
+              <div class="icon-social" onclick="openFacebook()">
                 <img src="assets/images/facebook.png" alt="Ícone do facebook" />
               </div>
-              <div class="icon-social">
+              <div class="icon-social" onclick="openInstagram()">
                 <img
                   src="assets/images/instagram.png"
                   alt="Ícone do instagram"
                 />
               </div>
-              <div class="icon-social">
+              <div class="icon-social" onclick="openTwitter()">
                 <img src="assets/images/twitter.png" alt="Ícone do twitter" />
               </div>
             </div>
           </div>
 
           <div class="content-up__redirect">
-            <a class="redirect-action">Subir</a>
-            <a class="redirect-action">Comidas Favoritas</a>
-            <a class="redirect-action">Localização</a>
+            <a class="redirect-action" href="#container">Subir</a>
+            <a class="redirect-action" href="#categories">Comidas Favoritas</a>
+            <a class="redirect-action" href="#location">Localização</a>
           </div>
         </div>
 
         <div class="footer-content__separator"></div>
 
         <div class="footer-content__down">
-          <p class="content-down__text">© 2023 Fonditas</p>
+          <p class="content-down__text">© 2023 Garden</p>
         </div>
       </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
