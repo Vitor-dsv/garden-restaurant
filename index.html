@@ -45,30 +45,29 @@
               class="menu-offcanvas__close"
               src="assets/images/fechar-simbolo-de-botao-circular.png"
               alt="fechar simbolo de botao circular"
-              onclick="document.querySelector('.menu-offcanvas-js').classList.toggle('is-active')"
+              onclick="closeMenuBar()"
             />
             <ul class="menu-offcanvas__group-list">
               <h1 class="nav-bar__title">Garden</h1>
 
               <li class="menu-offcanvas__group-list__item">
-                <a href="#categories">Categorias</a>
+                <a href="#categories" onclick="closeMenuBar()">Categorias</a>
               </li>
               <li class="menu-offcanvas__group-list__item">
-                <a href="#location">Localização</a>
+                <a href="#location" onclick="closeMenuBar()">Localização</a>
               </li>
               <li class="menu-offcanvas__group-list__item">
-                <a href="#footer">Contatos</a>
+                <a href="#footer" onclick="closeMenuBar()">Contatos</a>
               </li>
             </ul>
           </div>
 
           <img
-            onclick="document.querySelector('.menu-offcanvas-js').classList.toggle('is-active')"
+            onclick="closeMenuBar()"
             class="button-menu-canvas js-offcanvas-trigger"
             src="assets/images/menu-aberto.png"
             alt="Barras do menu"
           />
-
           <ul class="nav-bar__group-list">
             <li class="group-list__item">
               <a href="#categories">Categorias</a>
@@ -244,7 +243,7 @@
 
           <div class="content-up__redirect">
             <a class="redirect-action" href="#container">Subir</a>
-            <a class="redirect-action" href="#categories">Comidas Favoritas</a>
+            <a class="redirect-action" href="#categories">Categorias</a>
             <a class="redirect-action" href="#location">Localização</a>
           </div>
         </div>

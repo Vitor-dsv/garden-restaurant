@@ -6,3 +6,6 @@ const openTwitter = () => open("https://twitter.com");
 const openInstagram = () => open("https://instagram.com");
 const openFacebook = () => open("https://facebook.com");
 const openMaps = () => open("https://www.google.com.br/maps");
+
+const closeMenuBar = () =>
+  document.querySelector(".menu-offcanvas-js").classList.toggle("is-active");

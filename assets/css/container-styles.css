@@ -132,12 +132,11 @@ main {
   padding: 1.5rem 0;
   font-weight: 700;
   width: 100%;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease;
 }
 
 .menu-offcanvas__group-list__item:hover,
 .menu-offcanvas__group-list__item:focus {
-  background-color: #8fd485;
   border-radius: 10px;
   cursor: pointer;
   padding-left: 5rem;
